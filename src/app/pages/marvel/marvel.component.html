@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col" *ngFor="let item of comics">
+        <app-card
+        [cardTitle]="item.title"
+        [urlImage]="item.thumbnail.path + '.' + item.thumbnail.extension"
+        ></app-card>
+    </div>
+</div>
+
